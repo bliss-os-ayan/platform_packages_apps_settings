@@ -77,8 +77,9 @@ public class SettingsHomepageActivity extends FragmentActivity {
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
+//        final ImageView avatarView = findViewById(R.id.account_avatar);
+//       getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-
         avatarView = root.findViewById(R.id.account_avatar);
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
         avatarView.setImageDrawable(getCircularUserIcon(context));
@@ -91,7 +92,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
             }
         });
         //getLifecycle().addObserver(avatarViewMixin);
-
 
         showFragment(new TopLevelSettings(), R.id.main_content);
         ((FrameLayout) findViewById(R.id.main_content))
@@ -121,7 +121,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
     private boolean isHomepageSpacerEnabled() {
         return Settings.System.getInt(this.getContentResolver(),
-        Settings.System.SETTINGS_SPACER, 0) != 0;
+        Settings.System.SETTINGS_SPACER, 1) != 0;
     }
 
     private static void setMargins (View v, int l, int t, int r, int b) {
@@ -167,6 +167,5 @@ public class SettingsHomepageActivity extends FragmentActivity {
     public void onResume() {
         super.onResume();
         avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
-
     }
 }
