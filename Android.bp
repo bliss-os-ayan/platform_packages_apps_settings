@@ -75,6 +75,7 @@ android_library {
         "androidx.viewpager2_viewpager2",
         "kotlin-stdlib",
         "faceunlock_framework",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     libs: [
