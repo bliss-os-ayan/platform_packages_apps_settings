@@ -26,20 +26,8 @@
         android:theme="?android:attr/actionBarTheme"
         android:navigationContentDescription="@*android:string/action_bar_up_description"
         android:outlineProvider="none" />
-    <FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/homepage_spacer_margin_base"
-        app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
-
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-
-    </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 </LinearLayout>
