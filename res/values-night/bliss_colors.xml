@@ -25,5 +25,4 @@
     <color name="oos2_homepage_icon_background">#ff202124</color>
     <color name="tl_preference_divider_bg">#ff202124</color>
 
-    <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
 </resources>
