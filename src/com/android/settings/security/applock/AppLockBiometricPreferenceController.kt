@@ -24,7 +24,7 @@ import android.hardware.biometrics.BiometricManager.Authenticators
 import androidx.preference.Preference
 import androidx.preference.SwitchPreference
 
-import com.bliss.settings.BlissBasePreferenceController
+import org.blissroms.blissify.BlissBasePreferenceController
 
 class AppLockBiometricPreferenceController(
     context: Context,

@@ -22,7 +22,7 @@ import android.view.View
 
 import com.android.settings.R
 
-import org.blissroms.blissify.fragment.AppListFragment
+import org.blissroms.blissify.fragments.AppListFragment
 
 class AppLockNotificationListFragment : AppListFragment() {
 

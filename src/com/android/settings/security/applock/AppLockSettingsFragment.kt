@@ -27,7 +27,7 @@ import com.android.settings.search.BaseSearchIndexProvider
 import com.android.settingslib.core.AbstractPreferenceController
 import com.android.settingslib.core.lifecycle.Lifecycle
 import com.android.settingslib.search.SearchIndexable
-import org.blissroms.blissify.fragment.BlissDashboardFragment
+import org.blissroms.blissify.fragments.BlissDashboardFragment
 
 @SearchIndexable
 class AppLockSettingsFragment : BlissDashboardFragment(),
